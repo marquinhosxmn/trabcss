@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-labelledby="titulo desc">
+<title id="titulo">Tipos de planetas</title><desc id="desc">Quatro planetas rochosos, dois gigantes gasosos e dois gigantes de gelo.</desc>
+<rect width="960" height="330" fill="#f4f7fa"/>
+<text x="30" y="42" font-family="Arial, sans-serif" font-size="22" fill="#233d52" font-weight="bold">Classificação dos planetas</text>
+<rect x="28" y="76" width="290" height="211" fill="#ffffff" stroke="#c5d0d8"/>
+<rect x="334" y="76" width="290" height="211" fill="#ffffff" stroke="#c5d0d8"/>
+<rect x="640" y="76" width="290" height="211" fill="#ffffff" stroke="#c5d0d8"/>
+<g font-family="Arial,sans-serif" fill="#233d52" text-anchor="middle">
+<text x="173" y="110" font-size="20" font-weight="bold">Rochosos</text>
+<text x="173" y="162" font-size="17">Mercúrio e Vênus</text><text x="173" y="192" font-size="17">Terra e Marte</text>
+<text x="479" y="110" font-size="20" font-weight="bold">Gigantes gasosos</text>
+<text x="479" y="164" font-size="17">Júpiter</text><text x="479" y="194" font-size="17">Saturno</text>
+<text x="785" y="110" font-size="20" font-weight="bold">Gigantes de gelo</text>
+<text x="785" y="164" font-size="17">Urano</text><text x="785" y="194" font-size="17">Netuno</text>
+</g>
+<text x="173" y="259" font-family="Arial,sans-serif" font-size="14" fill="#596e7d" text-anchor="middle">Possuem superfície sólida</text>
+<text x="479" y="259" font-family="Arial,sans-serif" font-size="14" fill="#596e7d" text-anchor="middle">Hidrogênio e hélio</text>
+<text x="785" y="259" font-family="Arial,sans-serif" font-size="14" fill="#596e7d" text-anchor="middle">Composição interna distinta</text>
+</svg>

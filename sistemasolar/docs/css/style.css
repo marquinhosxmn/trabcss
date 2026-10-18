@@ -1,0 +1,254 @@
+/* Trabalho 2 - CSS - Sistema Solar */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #28323a;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    color: #215f90;
+}
+
+a:focus-visible, summary:focus-visible {
+    outline: 3px solid #efb443;
+    outline-offset: 3px;
+}
+
+.pular {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    background: white;
+    padding: 8px;
+    z-index: 10;
+}
+
+.pular:focus {
+    top: 80px;
+}
+
+/* Cabeçalho e menu */
+header {
+    background-color: #2e526d;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.cabecalho {
+    max-width: 950px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.nome-site {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.nome-site img {
+    width: 42px;
+    height: 42px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu summary {
+    list-style: none;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 6px 12px;
+    white-space: nowrap;
+}
+
+.menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu nav {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 225px;
+    background-color: white;
+    border: 1px solid #cdd7df;
+    box-shadow: 0 2px 5px #00000020;
+}
+
+.menu nav a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #28323a;
+    font-size: 15px;
+}
+
+.menu nav a:hover,
+.menu nav a:focus-visible {
+    background-color: #ecf3f8;
+}
+
+.menu nav a[aria-disabled="true"] {
+    color: #707980;
+}
+
+/* Área principal */
+main {
+    max-width: 950px;
+    padding: 30px 20px;
+    margin: auto;
+}
+
+section {
+    padding-bottom: 35px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #254e6d;
+    margin: 5px 0 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #254e6d;
+    margin-top: 34px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 19px;
+    margin: 22px 0 8px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Figuras da primeira seção */
+figure {
+    margin: 22px 0;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #515f69;
+    margin-top: 8px;
+}
+
+/* Galeria feita com Flexbox */
+#galeria {
+    border-top: 1px solid #d8e1e7;
+    padding-top: 15px;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fotos figure {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 0;
+    border: 1px solid #d5dce1;
+    margin: 0;
+    padding: 10px;
+}
+
+.fotos img {
+    aspect-ratio: 5 / 4;
+    object-fit: contain;
+    background-color: #080808;
+}
+
+.fotos figcaption {
+    font-size: 15px;
+    color: #28323a;
+}
+
+.referencias {
+    margin-top: 35px;
+    border-top: 1px solid #d8e1e7;
+    padding-top: 10px;
+}
+
+.referencias ul {
+    padding-left: 22px;
+}
+
+footer {
+    background-color: #2e526d;
+    color: white;
+    padding: 18px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+    .nome-site {
+        font-size: 15px;
+    }
+
+    .nome-site img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .cabecalho {
+        padding: 10px 15px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .fotos figure {
+        flex-basis: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
