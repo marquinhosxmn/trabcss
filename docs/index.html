@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página educativa sobre o Sistema Solar, seus planetas e suas características.">
+    <title>Conhecendo o Sistema Solar</title>
+    <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+        <div class="cabecalho">
+            <div class="nome-site">
+                <img src="imagens/logo.svg" width="42" height="42" alt="Desenho do Sol">
+                <span>Conhecendo o Sistema Solar</span>
+            </div>
+
+            <details class="menu">
+                <summary>☰ Menu</summary>
+                <nav aria-label="Menu principal">
+                    <a href="#introducao">Introdução</a>
+                    <a href="#galeria">Galeria</a>
+                    <a href="#curiosidades" aria-disabled="true" title="Conteúdo futuro">Curiosidades (em breve)</a>
+                    <a href="#atividades" aria-disabled="true" title="Conteúdo futuro">Atividades (em breve)</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section id="introducao">
+            <h1>O Sistema Solar</h1>
+            <p>O Sistema Solar é formado pelo Sol e pelos corpos celestes que giram ao seu redor.
+               Entre eles estão os planetas, as luas, os asteroides e os cometas.
+               A gravidade do Sol mantém esses objetos em suas órbitas.</p>
+
+            <h2>Como surgiu o Sistema Solar?</h2>
+            <p>Segundo a explicação científica mais aceita, o Sistema Solar começou a se formar
+               há aproximadamente 4,6 bilhões de anos a partir de uma grande nuvem de gás e poeira.
+               O Sol se formou na região central, enquanto parte do material ao redor deu origem
+               aos planetas e a outros corpos menores.</p>
+
+            <h2>Quais são os planetas?</h2>
+            <p>Existem oito planetas reconhecidos no Sistema Solar. Na ordem de distância do Sol,
+               eles são: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno.</p>
+
+            <figure>
+                <img src="imagens/ordem-planetas.svg" width="960" height="330"
+                     alt="Ordem dos oito planetas a partir do Sol, em um desenho sem escala real.">
+                <figcaption>Figura 1 - Ordem dos planetas. Imagem ilustrativa, sem escala.</figcaption>
+            </figure>
+
+            <h2>Tipos de planetas</h2>
+            <h3>Planetas rochosos</h3>
+            <p>Mercúrio, Vênus, Terra e Marte são chamados de planetas rochosos.
+               Eles possuem superfície sólida e ficam na região mais próxima do Sol.</p>
+
+            <h3>Planetas gigantes</h3>
+            <p>Júpiter e Saturno são gigantes gasosos, formados principalmente por hidrogênio e hélio.
+               Urano e Netuno são chamados de gigantes de gelo, pois apresentam composição interna diferente.
+               Esses quatro planetas não possuem uma superfície sólida como a da Terra.</p>
+
+            <figure>
+                <img src="imagens/tipos-planetas.svg" width="960" height="330" loading="lazy"
+                     alt="Divisão dos planetas em rochosos, gigantes gasosos e gigantes de gelo.">
+                <figcaption>Figura 2 - Classificação dos planetas do Sistema Solar.</figcaption>
+            </figure>
+
+            <h2>E Plutão?</h2>
+            <p>Plutão já foi considerado o nono planeta. Em 2006, passou a ser classificado
+               como planeta anão pela União Astronômica Internacional.
+               Isso não significa que deixou de existir, apenas que sua classificação mudou.</p>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria dos planetas</h2>
+            <p>Veja quatro imagens reais de planetas registradas por satélites e sondas espaciais. Algumas foram montadas a partir de várias fotografias.</p>
+
+            <div class="fotos">
+                <figure>
+                    <img src="imagens/terra.jpg" width="1000" height="1000" loading="lazy" decoding="async"
+                         alt="Imagem da Terra observada pelo satélite Suomi NPP, mostrando oceanos, continentes e nuvens.">
+                    <figcaption><strong>Terra</strong> - planeta onde vivemos. Foto: NASA.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/marte.jpg" width="1000" height="1000" loading="lazy" decoding="async"
+                         alt="Mosaico fotográfico de Marte feito com imagens da sonda Viking Orbiter, mostrando a superfície avermelhada e a calota polar.">
+                    <figcaption><strong>Marte</strong> - conhecido como planeta vermelho. Foto: NASA/JPL/USGS.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/jupiter.jpg" width="1229" height="1536" loading="lazy" decoding="async"
+                         alt="Mosaico fotográfico de Júpiter obtido pela sonda Cassini, com faixas de nuvens e a Grande Mancha Vermelha.">
+                    <figcaption><strong>Júpiter</strong> - maior planeta do Sistema Solar. Foto: NASA/JPL/SSI.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/saturno.jpg" width="1536" height="795" loading="lazy" decoding="async"
+                         alt="Fotografia de Saturno e seus anéis obtida pela sonda Cassini em 2017.">
+                    <figcaption><strong>Saturno</strong> - conhecido por seus anéis. Foto: NASA/JPL-Caltech/SSI.</figcaption>
+                </figure>
+            </div>
+
+            <div class="referencias">
+                <h3>Referências</h3>
+                <p>Textos elaborados com base em materiais educativos da NASA.
+                   As imagens da galeria são registros de missões espaciais divulgados pela NASA; algumas são mosaicos de várias fotografias.</p>
+                <ul>
+                    <li><a href="https://science.nasa.gov/solar-system/solar-system-facts/">NASA - Sistema Solar</a></li>
+                    <li><a href="https://science.nasa.gov/solar-system/planets/">NASA - Planetas</a></li>
+                    <li><a href="https://science.nasa.gov/sun/facts/">NASA - O Sol</a></li>
+                    <li><a href="https://science.nasa.gov/photojournal/earth/">NASA - Foto da Terra (PIA18033)</a></li>
+                    <li><a href="https://science.nasa.gov/photojournal/global-color-views-of-mars/">NASA - Imagem de Marte (PIA00407)</a></li>
+                    <li><a href="https://science.nasa.gov/photojournal/cassini-jupiter-portrait/">NASA - Imagem de Júpiter (PIA04866)</a></li>
+                    <li><a href="https://science.nasa.gov/photojournal/so-far-from-home/">NASA - Foto de Saturno (PIA21345)</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Kauã Marques</p>
+        <p>Trabalho 2 - CSS | Análise e Desenvolvimento de Sistemas | 2026</p>
+    </footer>
+</body>
+</html>
