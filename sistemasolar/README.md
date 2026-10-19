@@ -1,71 +1,40 @@
-# Trabalho 2 - CSS: Conhecendo o Sistema Solar
+# Conhecendo o Sistema Solar
 
-Site educativo em HTML e CSS puro, sem bibliotecas CSS ou JavaScript.
+Site educativo desenvolvido para o Trabalho 2 de CSS da disciplina de Front-End, do curso de Análise e Desenvolvimento de Sistemas do IFRS.
 
-## Fotografias da NASA
+**Aluno:** Kauã Marques  
+**Tema:** Sistema Solar
 
-A galeria usa quatro registros reais de missões espaciais, da Terra, Marte, Júpiter e Saturno. Algumas imagens são mosaicos feitos com várias fotografias, não desenhos gerados digitalmente.
+## Sobre o site
 
-**Importante:** por padrão, as fotografias são carregadas dos servidores da NASA, portanto precisam de conexão à internet.
+A página apresenta informações sobre a formação do Sistema Solar, a ordem dos planetas e suas principais características. Também possui uma galeria com imagens da Terra, Marte, Júpiter e Saturno.
 
-**Para colocar todas as fotos na pasta de imagens antes da entrega**, no Windows:
+## Tecnologias utilizadas
 
-1. Clique duas vezes no arquivo `baixar-fotos-nasa.bat` estando conectado à internet.
-2. Aguarde a mensagem de confirmação: o programa salva as quatro fotos em `docs/imagens` e altera automaticamente o HTML para usar os arquivos locais.
-3. Confira que aparecem os arquivos `terra.jpg`, `marte.jpg`, `jupiter.jpg`, `saturno.jpg` na pasta `docs/imagens`.
-4. Envie a pasta `docs` já com as fotos baixadas para o GitHub.
+- HTML5
+- CSS3
+- Flexbox
+- Google Fonts (Roboto)
+- modern-normalize.css
 
-Se preferir, pode baixar as imagens manualmente das páginas da NASA listadas em "Referências das fotografias" abaixo e salvar com os nomes acima. Depois troque o `src` de cada imagem no HTML pelo endereço `imagens/nome.jpg`.
+## Estrutura do projeto
 
-## Organização dos arquivos
+- `docs/index.html` — página principal
+- `docs/css/` — arquivos de estilos
+- `docs/imagens/` — imagens e ilustrações do site
 
-```text
-sistema-solar-simples/
-├── README.md
-├── baixar-fotos-nasa.bat
-├── baixar-fotos-nasa.ps1
-└── docs/
-    ├── index.html
-    ├── css/
-    │   ├── modern-normalize.css
-    │   └── style.css
-    └── imagens/
-        ├── logo.svg
-        ├── ordem-planetas.svg
-        ├── tipos-planetas.svg
-        └── terra.jpg, marte.jpg, jupiter.jpg, saturno.jpg  (após executar o .bat)
-```
+## Links
 
-## Como abrir e apresentar
+**Site:** https://marquinhosxmn.github.io/trabcss/  
+**Código-fonte:** https://github.com/marquinhosxmn/trabcss
 
-Abra `docs/index.html` no navegador. O menu usa `<details>` e `<summary>` sem JavaScript. O `<nav>` contém quatro opções, sendo duas correspondentes às seções atuais. A galeria usa Flexbox (`display: flex`, `flex-wrap: wrap`) e se ajusta para uma coluna no celular com `@media`. O `<header>` usa `position: sticky`.
+## Referências
 
-## Como publicar no GitHub Pages
-
-1. Antes, execute `baixar-fotos-nasa.bat` para colocar as fotografias na pasta do trabalho.
-2. Crie um repositório público no GitHub.
-3. Adicione a pasta `docs` e o `README.md`.
-4. Vá em **Settings > Pages > Build and deployment** e escolha branch `main`, pasta `/docs`.
-5. Acesse o endereço do site disponibilizado pelo GitHub e teste.
-
-## Referências dos textos
-
-- NASA - https://science.nasa.gov/solar-system/solar-system-facts/
-- NASA - https://science.nasa.gov/solar-system/planets/
-- NASA - https://science.nasa.gov/sun/facts/
-
-## Referências das fotografias
-
-- Terra (PIA18033): NASA - https://science.nasa.gov/photojournal/earth/
-- Marte (PIA00407): NASA/JPL/USGS - https://science.nasa.gov/photojournal/global-color-views-of-mars/
-- Júpiter (PIA04866): NASA/JPL/Space Science Institute - https://science.nasa.gov/photojournal/cassini-jupiter-portrait/
-- Saturno (PIA21345): NASA/JPL-Caltech/Space Science Institute - https://science.nasa.gov/photojournal/so-far-from-home/
-
-## Validadores
-
-- HTML: https://validator.w3.org/
-- CSS: https://jigsaw.w3.org/css-validator/
-- WAVE: https://wave.webaim.org/
-- PageSpeed computador e celular: https://pagespeed.web.dev/
-
-As notas e os testes oficiais só podem ser confirmados depois da publicação. `modern-normalize.css` é baseado no projeto MIT https://github.com/sindresorhus/modern-normalize.
+- [NASA — Sistema Solar](https://science.nasa.gov/solar-system/solar-system-facts/)
+- [NASA — Planetas](https://science.nasa.gov/solar-system/planets/)
+- [NASA — O Sol](https://science.nasa.gov/sun/facts/)
+- [NASA — Imagem da Terra](https://science.nasa.gov/photojournal/earth/)
+- [NASA/JPL/USGS — Imagem de Marte](https://science.nasa.gov/photojournal/global-color-views-of-mars/)
+- [NASA/JPL/Space Science Institute — Imagem de Júpiter](https://science.nasa.gov/photojournal/cassini-jupiter-portrait/)
+- [NASA/JPL-Caltech/Space Science Institute — Imagem de Saturno](https://science.nasa.gov/photojournal/so-far-from-home/)
+- [modern-normalize — licença MIT](https://github.com/sindresorhus/modern-normalize)
